@@ -80,13 +80,14 @@
         var cookies = document.cookie;
 
         function setColor() {
-            var someTime = "Thu, 08 Dec 2022 12:00:00 UTC"
+            var someTime = "Thu, 22 Dec 2022 12:00:00 UTC"
             var bgColor = document.getElementById('bgcolor').value;
             document.cookie = 'BgColor=' + bgColor + ";expires=" + someTime + ";path=/;"
         }
         function backImage() {
+            var someTime = "Thu, 22 Dec 2022 12:00:00 UTC"
             var bgImg = document.getElementById('backImg').value
-            document.cookie = "BackImg=" + bgImg + ";path=/";
+            document.cookie = "BackImg=" + bgImg + ";expires=" + someTime + ";path=/;"
         }
 
         const cookieSelect = document.getElementById('cookie-select')
