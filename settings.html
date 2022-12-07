@@ -152,7 +152,7 @@
         function setCookie() {
             var cookieName = document.getElementById('cookie-name').value
             var cookieValue = document.getElementById('cookie-value').value
-            if (cookieName == '' || cookieValue) {
+            if (cookieName == '' || cookieValue == '') {
                 window.alert("Please enter cookie name and value")
                 return
             }
